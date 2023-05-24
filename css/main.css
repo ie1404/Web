@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width:1200px;
+    margin:auto;
+    font-family: "Verdana", sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    height: 800px;
+    background-image: url(../images/beach.jpg); 
+    background-size: 3; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center center;
+    background-color: bisque;
+}
+
+
+.rwd-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+}
+.rwd-logo-main {
+    font-size: 2.27rem;
+}
+
+.rwd-logo-second {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing:  2px;
+}
+
+.rwd-nav {
+   display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.rwd-nav a{
+    margin: 1rem;
+    text-transform: uppercase;
+    color:black;
+}
+
+
+
+
+main {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.hotel-card img{
+    width: 100%;
+    height:auto;
+    border-radius: 2rem;
+    
+}
+
+.hotel-card p{
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+footer{
+    height: 120px;
+    background-color: rgb(193, 192, 255);
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+}
+footer p{
+    color: whitesmoke;
+
+}
+
+footer a{
+    color: whitesmoke;
+
+}
+
+ @media screen  and (max-width:1000px) {
+    main {
+
+        grid-template-columns:1fr
+    }
+} 
+
+/* @media screen  and (max-width:600px) {
+    main {
+
+        grid-template-columns:1fr
+    }
+} */ 
+
+/* @media printe{
+    footer{
+        visibility: hidden;
+    }
+    header{
+        visibility: hidden;
+    }
+} */
